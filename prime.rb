@@ -1,8 +1,8 @@
-def prime?(value)
-  if value > 1
-    range = (2..value-1).to_a
+def prime?(int)
+  if int > 1
+    range = (2..int-1).to_a
     range.none? do |range_num|
-      value % range_num == 0
+      int % range_num == 0
     end
   else
     false
